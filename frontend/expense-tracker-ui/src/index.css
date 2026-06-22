@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-container {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-back {
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.month-section {
+  margin-bottom: 30px;
+}
+
+.month-header {
+  display: flex;
+  justify-content: space-between;
+  background: #e6f7f1;
+  padding: 10px;
+  border-left: 5px solid #2ecc71;
+  font-size: 18px;
+}
+
+.month-total {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.expense-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+.expense-table td:nth-child(3),
+.expense-table th:nth-child(3) {
+  text-align: right; /* Amount column */
+}
+
+.expense-table td:nth-child(4),
+.expense-table th:nth-child(4) {
+  text-align: center; /* Action column */
+}
